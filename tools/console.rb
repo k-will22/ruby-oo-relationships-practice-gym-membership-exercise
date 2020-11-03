@@ -3,6 +3,17 @@
 require_relative '../config/environment.rb'
 
 # test code goes here
+wendler = Lifter.new("wendler", 1098)
+ripetoe = Lifter.new("ripetoe", 976)
+baker = Lifter.new("baker", 874)
+
+golds_gym = Gym.new("golds_gym")
+blink_fitness = Gym.new("blink_fitness")
+
+m1 = Membership.new(50, golds_gym, wendler)
+m2 = Membership.new(60, blink_fitness, ripetoe)
+m3 = Membership.new(40, blink_fitness, baker)
+
 
 binding.pry
 
